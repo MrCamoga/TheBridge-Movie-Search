@@ -1,0 +1,49 @@
+.movie-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    max-width: 600px;
+    padding: 1em;
+    gap: 20px;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    img {
+        height: 250px;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        align-self: center;
+    }
+}
+
+#movie-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+// #searchform {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1em;
+//     width: fit-content;
+// }
+
+.movie-genre {
+    padding: 5px;
+    border-radius: 5px;
+    background: #ccc;
+}
+
+.movie-genre-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
